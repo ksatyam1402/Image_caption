@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Captioning</title>
+</head>
+<body>
+
+	<h1> Image Captioning </h1>
+	<form method="POST" enctype="multipart/form-data" action="/" >
+		<input type="file" name="userfile" placeholder="Your image">
+		<input type="submit" >
+	</form>
+
+
+
+	{% if your_caption %}
+
+	    <h1> GENERATED CAPTION : <i> {{ your_caption }} </i></h1>
+    
+    {% endif %}
+
+</body>
+</html>	
